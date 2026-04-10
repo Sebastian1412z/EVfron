@@ -1,0 +1,14 @@
+#titulo_principal {
+    background-color: gold;
+    color:palegoldenrod;
+    padding: 200px;
+    background-image: url('p.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+#descripcionp {
+    background-color:gold;
+    color:black;
+    padding: 10px;
+}
