@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="color.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="#" style="color: #00a8e8;">Ropa de Comics Chile</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,10 +18,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Poleras</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Chaquetas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Pantalones</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#titulo_principal">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#poleras">Poleras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chaquetas">Chaquetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Buscar ropa...">
@@ -37,25 +38,13 @@
 
 <h2 id="descripcionp">Bienvenido a la tienda de ropa de comics chile</h2>
 
-<section class="container">
-    <h1 class="titulo-seccion">PRODUCTOS</h1>
-
-    <div class="contenedor-opciones">
-        <span class="activa">Destacados</span>
-        <span>Mas recientes</span>
-        <span>Ofertas</span>
-    </div>
-
+<section class="container" id="ofertas">
+    <h1 class="titulo-seccion">DESTACADOS EN OFERTA</h1> 
     <div class="cuadricula-productos">
         <div class="tarjeta-producto">
             <div class="contenedor-imagen">
                 <img src="img/dc17.webp" alt="Polera Batman">
                 <span class="etiqueta-descuento">-13%</span>
-                <div class="grupo-botones">
-                    <span><i class="fa-regular fa-eye"></i></span>
-                    <span><i class="fa-regular fa-heart"></i></span>
-                    <span><i class="fa-solid fa-code-compare"></i></span>
-                </div>
             </div>
             <div class="contenido-producto">
                 <div class="estrellas">
@@ -66,16 +55,11 @@
                 <p class="precio">$14.990 <span>$18.990</span></p>
             </div>
         </div>
-
+        
         <div class="tarjeta-producto">
             <div class="contenedor-imagen">
                 <img src="img/invenc.webp" alt="Polera Invencible">
                 <span class="etiqueta-descuento">-22%</span>
-                <div class="grupo-botones">
-                    <span><i class="fa-regular fa-eye"></i></span>
-                    <span><i class="fa-regular fa-heart"></i></span>
-                    <span><i class="fa-solid fa-code-compare"></i></span>
-                </div>
             </div>
             <div class="contenido-producto">
                 <div class="estrellas">
@@ -90,11 +74,7 @@
         <div class="tarjeta-producto">
             <div class="contenedor-imagen">
                 <img src="img/xmen.webp" alt="Polera X-Men">
-                <div class="grupo-botones">
-                    <span><i class="fa-regular fa-eye"></i></span>
-                    <span><i class="fa-regular fa-heart"></i></span>
-                    <span><i class="fa-solid fa-code-compare"></i></span>
-                </div>
+                <span class="etiqueta-descuento">-20%</span>
             </div>
             <div class="contenido-producto">
                 <div class="estrellas">
@@ -102,12 +82,217 @@
                 </div>
                 <h3>Polera X-Men</h3>
                 <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$15.990 <span>$19.990</span></p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="container" id="poleras">
+    <h1 class="titulo-seccion">POLERAS</h1>
+
+    <div class="cuadricula-productos">
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/dc17.webp" alt="Polera Batman">
+                <span class="etiqueta-descuento">-13%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera Batman</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$14.990 <span>$18.990</span></p>
+            </div>
+        </div>
+        
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/invenc.webp" alt="Polera Invencible">
+                <span class="etiqueta-descuento">-22%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Polera Invencible</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$12.990 <span>$16.500</span></p>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/xmen.webp" alt="Polera X-Men">
+                <span class="etiqueta-descuento">-20%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera X-Men</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                 <p class="precio">$15.990 <span>$19.990</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="chaquetas">
+    <h1 class="titulo-seccion">CHAQUETAS</h1>
+
+    <div class="cuadricula-productos">
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/spidervenomC.jpg" alt="Chaqueta Spider-Man Venom">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Chaqueta Spider-Man Venom</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$29.990</p>
+            </div>
+        </div>
+          
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/spidervenom2C.jpg" alt="Chaqueta Spider-Man 300">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Chaqueta Spider-Man #300</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                 <p class="precio">$27.990</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/avengersC.jpg" alt="Chaqueta Avengers">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Chaqueta Avengers</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$24.990</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="galeria">
+    <h1 class="titulo-seccion">GALERIA</h1>
+
+    <div class="cuadricula-productos">
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/dc17.webp" alt="Polera Batman">
+                <span class="etiqueta-descuento">-13%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera Batman</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$14.990 <span>$18.990</span></p>
+            </div>
+        </div>
+        
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/invenc.webp" alt="Polera Invencible">
+                <span class="etiqueta-descuento">-22%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Polera Invencible</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$12.990 <span>$16.500</span></p>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/xmen.webp" alt="Polera X-Men">
+                <span class="etiqueta-descuento">-20%</span>
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera X-Men</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                 <p class="precio">$15.990 <span>$19.990</span></p>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="cuadricula-productos">
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/wolverine1.webp" alt="Polera Wolverine">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera Wolverine</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$15.500</p>
+            </div>
+        </div>
+        
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/supermanP.jpg" alt="Polera Superman">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Polera Superman</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                <p class="precio">$14.990</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="contenedor-imagen">
+                <img src="img/spiderman1.jpg" alt="Polera Amazing Spider-Man">
+            </div>
+            <div class="contenido-producto">
+                <div class="estrellas">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h3>Polera Amazing Spider-Man</h3>
+                <span class="agregar-carrito"><i class="fa-solid fa-basket-shopping"></i></span>
                 <p class="precio">$15.990</p>
             </div>
         </div>
     </div>
 </section>
 
+<section class="footer">
+    <div class="footerdiv">
+        <footer>
+            <h3>Contacto</h3>
+            <p>+56 9 2613 3037</p>
+            <p>sebastian.hidalgo29@inacapmail.cl</p>
+            <p>Los Ángeles, Chile</p>
+            <a href="https://github.com/Sebastian1412z/EVfron.git">Repositorio de GitHub</a>
+        </footer>
+    </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,11 +1,21 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+section {
+    scroll-margin-top: 70px; 
+}
+
 :root {
     --color-primario: #00a8e8; 
-    --color-oscuro: #333;
-    --color-fondo: #f9f9f9;
+    --color-oscuro: #222;
+    --color-fondo: #121212; 
+    --color-amarillo: gold;
 }
 
 body {
     background-color: var(--color-fondo);
+    color: white; 
     font-family: 'Poppins', sans-serif;
 }
 
@@ -27,7 +37,7 @@ body {
 }
 
 #descripcionp {
-    background-color: gold; 
+    background-color: var(--color-amarillo); 
     color: black;
     padding: 15px;
     text-align: center;
@@ -36,42 +46,12 @@ body {
     text-transform: uppercase;
 }
 
-
 .titulo-seccion {
     text-align: center;
     font-weight: 700;
     margin: 50px 0;
-    color: var(--color-oscuro);
-}
-
-
-.contenedor-opciones {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 30px;
-}
-
-.contenedor-opciones span {
-    cursor: pointer;
-    background-color: #fff;
-    padding: 0.7rem 2.5rem;
-    border-radius: 2rem;
-    color: #777;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.contenedor-opciones span.activa {
-    background-color: var(--color-primario);
-    color: #fff;
-    border-color: var(--color-primario);
-}
-
-.contenedor-opciones span:hover {
-    background-color: var(--color-primario);
-    color: #fff;
-    border-color: var(--color-primario);
+    color: var(--color-amarillo); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .cuadricula-productos {
@@ -85,7 +65,7 @@ body {
     background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
-    border: 2px solid black; 
+    border: 2px solid var(--color-amarillo); 
     transition: 0.4s;
     text-align: center;
 }
@@ -93,7 +73,7 @@ body {
 .tarjeta-producto:hover {
     transform: translateY(-10px);
     border-color: var(--color-primario);
-    box-shadow: 0 10px 25px rgba(0, 168, 232, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 168, 232, 0.4);
 }
 
 .contenedor-imagen {
@@ -117,31 +97,6 @@ body {
     z-index: 2;
 }
 
-.grupo-botones {
-    position: absolute;
-    top: 10px;
-    right: -50px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: 0.4s;
-}
-
-.tarjeta-producto:hover .grupo-botones {
-    right: 10px;
-}
-
-.grupo-botones span {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    border: 1px solid var(--color-primario);
-    color: var(--color-primario);
-    display: flex;
-    transition: 0.3s;
-}
-
-
 .contenido-producto {
     padding-top: 1rem;
 }
@@ -155,6 +110,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 15px;
+    color: black; 
 }
 
 .precio {
@@ -185,4 +141,36 @@ body {
 .agregar-carrito:hover {
     background-color: var(--color-primario);
     color: #efefef;
+}
+
+.footer {
+    background-color: black; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 4px solid var(--color-amarillo);
+}
+
+.footer h3 {
+    color: var(--color-amarillo);
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.footer a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.footer a:hover {
+    color: var(--color-amarillo);
 }
