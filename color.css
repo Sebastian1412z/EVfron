@@ -1,21 +1,19 @@
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important; /*da movimiento medio suave para abajo*/
 }
 
 section {
-    scroll-margin-top: 70px; 
+    scroll-margin-top: 70px; /*arriba*/
 }
 
-:root {
+:root { /*estas -- la usamos para no andar repitiendo*/
     --color-primario: #00a8e8; 
-    --color-oscuro: #222;
     --color-fondo: #121212; 
     --color-amarillo: gold;
 }
 
 body {
     background-color: var(--color-fondo);
-    color: white; 
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,9 +29,9 @@ body {
     color: palegoldenrod; 
     font-size: 5rem;
     font-weight: 800;
-    text-transform: uppercase;
+    text-transform: uppercase; /*mayus*/
     text-shadow: 2px 2px 15px rgba(238, 5, 5, 0.7);
-    margin: 0;
+    margin: 0; /*elimina espacio en todos los lados*/
 }
 
 #descripcionp {
@@ -49,9 +47,8 @@ body {
 .titulo-seccion {
     text-align: center;
     font-weight: 700;
-    margin: 50px 0;
+    margin: 50px 0; /*50 arriba y abajo y 0 a los lados*/
     color: var(--color-amarillo); 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .cuadricula-productos {
@@ -97,20 +94,20 @@ body {
     z-index: 2;
 }
 
-.contenido-producto {
-    padding-top: 1rem;
+.contenido-producto { 
+    padding-top: 1rem; /*para que no quede pegado la info*/
 }
 
 .estrellas {
     color: #ffd700;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*abajo*/
 }
 
 .contenido-producto h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: black; 
+    font-size: 1.4rem; /*tamaño de las letras*/
+    font-weight: 600; /*es un grosor semi bold*/
+    margin-bottom: 15px; 
+    color: rgb(0, 0, 0); 
 }
 
 .precio {
@@ -124,7 +121,7 @@ body {
     font-size: 1rem;
     color: #bbb;
     text-decoration: line-through;
-    margin-left: 10px;
+    margin-left: 10px; /*izquierda*/
 }
 
 .agregar-carrito {
@@ -133,7 +130,7 @@ body {
     border-radius: 50%;
     color: var(--color-primario);
     transition: 0.3s;
-    cursor: pointer;
+    cursor: pointer; /*se muestra la mano en el icono*/
     display: inline-flex;
     margin-top: 15px;
 }
@@ -159,7 +156,7 @@ body {
 
 .footer p {
     margin: 5px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .footer a {
